@@ -14,7 +14,7 @@ router.get('/', (req, res) =>{
 });
 
 router.get('/:id', (req, res) =>{
-    fs.readFile('/.data/videos.json', 'utf-8', (err, data) =>{
+    fs.readFile('./data/videos.json', 'utf-8', (err, data) =>{
         if (err){
             return res.send('error getting game with the id of ' + req.params.id);
         }
