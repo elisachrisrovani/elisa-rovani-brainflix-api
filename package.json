@@ -9,7 +9,8 @@
     "gitignore": "^0.7.0",
     "nodemon": "^2.0.22",
     "scripts": "^0.1.0",
-    "uui": "^1.0.7"
+    "uui": "^1.0.7",
+    "uuid": "^9.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

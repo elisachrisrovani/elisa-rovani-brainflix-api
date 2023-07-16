@@ -3,7 +3,6 @@ const cors = require('cors');
 const app = express()
 const videoRoutes = require('./routes/videos');
 
-
 app.use(cors());
 
 app.use(express.json());

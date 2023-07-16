@@ -1,3 +1,7 @@
+
+
+const uuid = require('uuid');
+
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
@@ -36,10 +40,10 @@ router.post('/', (req, res) =>{
         const videos = JSON.parse(data);
 
         const newVideo ={
-            "id": String (uuid()),
+            "id": uuid,
             "title": req.body.title,
             "channel": "Peace green",
-            "image": 'images/image0.jpeg',
+            "image": 'http://localhost:5050/images/image0.jpeg',
             "description": req.body.description,
             "views": "1",
             "likes": "1",
